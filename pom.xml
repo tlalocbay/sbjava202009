@@ -11,21 +11,20 @@
     <!-- All POMs extend the Super POM unless explicitly set -->
     <!--<parent>*</parent>-->
 
-    <groupId>ru.sbrf.cu</groupId>
+    <groupId>org.example</groupId>
     <artifactId>sbjava202009</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>L01_hello</module>
         <module>L02-figure</module>
     </modules>
 
     <properties>
 
         <!-- region general -->
-        <java.version>13</java.version>
+        <java.version>8</java.version>
         <revision>2020-09-SNAPSHOT</revision>
         <minimal.maven.version>3.6.1</minimal.maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

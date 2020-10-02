@@ -1,8 +1,8 @@
 package figure;
 
 public class Reactangle extends Figure {
-    double a = 0;
-    double b = 0;
+    private double a = 0;
+    private double b = 0;
 
     public Reactangle (double a){
         this.a = a;
@@ -26,6 +26,8 @@ public class Reactangle extends Figure {
 
     public void setA(double a) {
         this.a = a;
+        this.perimetr = 2 * (this.a + this.b);
+        this.square = this.a * this.b;
     }
 
     public double getB() {
@@ -34,6 +36,8 @@ public class Reactangle extends Figure {
 
     public void setB(double b) {
         this.b = b;
+        this.perimetr = 2 * (this.a + this.b);
+        this.square = this.a * this.b;
     }
 
 }

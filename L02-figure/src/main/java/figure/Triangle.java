@@ -2,9 +2,9 @@ package figure;
 
 
 public class Triangle extends Figure {
-    double a;
-    double b;
-    double c;
+    private double a = 0;
+    private double b = 0;
+    private double c = 0;
 
     public Triangle (double a, double b, double c){
         this.a = a;
@@ -12,7 +12,6 @@ public class Triangle extends Figure {
         this.c = c;
         this.perimetr = a+b+c;
         this.square = Math.sqrt((this.perimetr/2)*(this.perimetr/2 -this.a)*(this.perimetr/2 -this.b)*(this.perimetr/2-this.c));
-
     }
 
     public double getB() {
@@ -21,10 +20,14 @@ public class Triangle extends Figure {
 
     public void setA(double a) {
         this.a = a;
+        this.perimetr = this.a+this.b+this.c;
+        this.square = Math.sqrt((this.perimetr/2)*(this.perimetr/2 -this.a)*(this.perimetr/2 -this.b)*(this.perimetr/2-this.c));
     }
 
     public void setB(double b) {
         this.b = b;
+        this.perimetr = this.a+this.b+this.c;
+        this.square = Math.sqrt((this.perimetr/2)*(this.perimetr/2 -this.a)*(this.perimetr/2 -this.b)*(this.perimetr/2-this.c));
     }
 
     public double getA() {
@@ -37,6 +40,8 @@ public class Triangle extends Figure {
 
     public void setC(double c) {
         this.c = c;
+        this.perimetr = this.a+this.b+this.c;
+        this.square = Math.sqrt((this.perimetr/2)*(this.perimetr/2 -this.a)*(this.perimetr/2 -this.b)*(this.perimetr/2-this.c));
     }
 
 
