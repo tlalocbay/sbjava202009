@@ -26,7 +26,7 @@ public class App {
                     figure = new Reactangle(x, y);
                     break;
                 case "квадрат":
-                    System.out.println("Введите стороны квадрата:");
+                    System.out.println("Введите сторону квадрата:");
                     double k = in.nextInt();
                     figure = new Reactangle(k);
                     break;
@@ -34,8 +34,8 @@ public class App {
                     System.out.println("try again");
                     break;
             }
-            System.out.println("Периметр треунольника = " + figure.getPerimetr());
-            System.out.println("Площадь треунольника = " + figure.getSquare());
+            System.out.println("Периметр фигуры = " + figure.getPerimetr());
+            System.out.println("Площадь фигуры = " + figure.getSquare());
 
         }
     }

@@ -5,10 +5,6 @@ public class Figure {
     double perimetr = 0;
     double square = 0;
 
-
-
-
-
     public double getPerimetr() {
         return perimetr;
     }
