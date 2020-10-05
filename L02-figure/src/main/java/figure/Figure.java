@@ -12,4 +12,5 @@ public class Figure {
     public double getSquare() {
         return square;
     }
+    public String getName(){ return name;}
 }

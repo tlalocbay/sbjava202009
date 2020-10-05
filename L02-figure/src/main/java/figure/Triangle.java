@@ -6,7 +6,8 @@ public class Triangle extends Figure {
     private double b = 0;
     private double c = 0;
 
-    public Triangle (double a, double b, double c){
+    public Triangle (String name, double a, double b, double c){
+        this.name = name;
         this.a = a;
         this.b = b;
         this.c = c;

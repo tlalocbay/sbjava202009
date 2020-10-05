@@ -4,7 +4,8 @@ public class Reactangle extends Figure {
     private double a = 0;
     private double b = 0;
 
-    public Reactangle (double a){
+    public Reactangle (String name, double a){
+        this.name = name;
         this.a = a;
         this.b = b;
         this.square = a * a;
@@ -12,7 +13,8 @@ public class Reactangle extends Figure {
     }
 
 
-    public Reactangle(double a, double b){
+    public Reactangle(String name, double a, double b){
+        this.name = name;
         this.a = a;
         this.b = b;
         this.perimetr = 2*(a + b);

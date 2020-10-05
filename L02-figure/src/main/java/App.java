@@ -16,26 +16,26 @@ public class App {
                     int a = in.nextInt();
                     int b = in.nextInt();
                     int c = in.nextInt();
-                    figure = new Triangle(a,b,c);
+                    figure = new Triangle("треугольник",a,b,c);
                     break;
 
                 case "прямоугольник":
                     System.out.println("Введите стороны прямоугольника:");
                     int x = in.nextInt();
                     int y = in.nextInt();
-                    figure = new Reactangle(x, y);
+                    figure = new Reactangle("прямоугольник",x, y);
                     break;
                 case "квадрат":
                     System.out.println("Введите сторону квадрата:");
                     double k = in.nextInt();
-                    figure = new Reactangle(k);
+                    figure = new Reactangle("квадрат",k);
                     break;
                 default:
                     System.out.println("try again");
                     break;
             }
-            System.out.println("Периметр фигуры = " + figure.getPerimetr());
-            System.out.println("Площадь фигуры = " + figure.getSquare());
+            System.out.println("Периметр " + figure.getName() + " = " + figure.getPerimetr());
+            System.out.println("Площадь " + figure.getName() + " = " + figure.getSquare());
 
         }
     }
